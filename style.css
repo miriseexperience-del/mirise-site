@@ -1,0 +1,272 @@
+/* ===============================
+   全体設定
+================================*/
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.8;
+}
+
+h1,
+h2,
+h3 {
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.section {
+    width: 90%;
+    max-width: 900px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.lead {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+
+/* ===============================
+   HEADER （上部メニュー）
+================================*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 18px;
+    /* ← 少し狭くする */
+    flex-wrap: nowrap;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    /* ← 少し小さくする */
+    letter-spacing: 1px;
+}
+
+.nav-menu a:hover {
+    color: #ffd700;
+    transition: 0.3s;
+}
+}
+
+.nav-menu a:hover {
+    color: #ffd700;
+    transition: 0.3s;
+}
+}
+
+.nav-menu a:hover {
+    color: #ffd700;
+    transition: 0.3s;
+}
+
+/* ハンバーガー（スマホ用） */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* ===============================
+   HERO
+================================*/
+.hero {
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 80px;
+    background: url("universe.jpg") center/cover no-repeat;
+}
+
+.hero-photo {
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+}
+
+.hero-name {
+    margin-top: 15px;
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.catchcopy {
+    margin-top: 30px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.catchcopy-en {
+    font-size: 18px;
+    color: #ffd700;
+    margin-top: 10px;
+}
+
+
+/* ===============================
+   PHILOSOPHY リスト
+================================*/
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+
+/* ===============================
+   SERVICE
+================================*/
+.service-box {
+    display: grid;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.service-item {
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.service-item h3 {
+    color: #ffd700;
+}
+
+
+/* ===============================
+   STORY（note ボタン）
+================================*/
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: #ffd700;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+
+/* ===============================
+   CONTACT
+================================*/
+.contact-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.contact-list a {
+    color: #ffd700;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    opacity: 0.7;
+}
+
+
+/* ===============================
+   スマホ対応
+================================*/
+@media (max-width: 768px) {
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        color: #ffd700;
+    }
+
+    .hero-photo {
+        width: 70%;
+    }
+
+    .catchcopy {
+        font-size: 22px;
+    }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+   ナビゲーションメニューの調整（右上のはみ出し改善）
+   ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* 右寄せ */
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    /* ← 小さくしてはみ出し防止 */
+    letter-spacing: 1px;
+    white-space: nowrap;
+    /* ← 改行しない */
+}
+
+.nav-menu a:hover {
+    color: #ffd700;
+    transition: 0.3s;
+}
