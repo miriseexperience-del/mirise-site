@@ -1,0 +1,171 @@
+body {
+    background: #000;
+    color: #fff;
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+/* ==========================
+   OGP 全画面（フェードアウト）
+========================== */
+#splash {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    animation: fadeOut 1.8s ease forwards;
+}
+
+#splash img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* ==========================
+   タイトル
+========================== */
+h1 {
+    color: #ffd700;
+    margin-top: 40px;
+}
+
+/* ==========================
+   横並びメニュー
+========================== */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* ==========================
+   セクション
+========================== */
+.section {
+    padding: 60px 20px;
+}
+
+h2 {
+    color: #ffd700;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* ==========================
+   プロフィール画像
+========================== */
+.profile-img {
+    width: 360px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+}
+
+.kanta-name {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #ffd700;
+}
+
+/* ==========================
+   SERVICE 内容
+========================== */
+.service-box {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid #444;
+    padding: 25px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+.service-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ffd700;
+    color: #000;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+/* ==========================
+   STORY・CONTACT
+========================== */
+.note-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #ffd700;
+    color: #000;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sns-box a {
+    color: #ffd700;
+    margin: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sns-box a:hover {
+    color: #fff;
+}
+
+/* ==========================
+   アニメーション fade-up
+========================== */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-btn {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
